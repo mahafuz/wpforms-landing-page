@@ -1,0 +1,288 @@
+@import "partials/default";
+
+.hero-area
+    background-color: #036AAB
+    max-height: 658px
+    @media only screen and (max-width: 767px)
+        max-height: 545px
+    .hero-area-content
+        text-align: center
+        padding-top: 53px
+        .hero-area-title
+            font-weight: normal
+            font-size: 48px
+            line-height: 59px
+            color: #FFFFFF
+            display: inline-block
+            position: relative
+            margin-bottom: 30px
+            @media only screen and (max-width: 767px)
+                font-size: 38px
+                margin-bottom: 15px
+            .header-ribon
+                position: absolute
+                right: -46px
+                top: -27px
+        p
+            font-family: 'Lato', sans-serif
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            color: #FFFFFF
+            opacity: 0.8
+            margin-bottom: 50px
+            @media only screen and (max-width: 767px)
+                font-size: 14px
+                padding: 0 15px
+                margin-bottom: 30px
+                br
+                    display: none
+        .hero-area-buttons
+            button
+                margin: 0 24px
+                @media only screen and (max-width: 767px)
+                    font-size: 14px
+                    height: 45px
+                    width: 200px
+                    margin-bottom: 15px
+
+    .hero-area-video-wrap
+        position: relative
+        .video-player
+        position: relative
+        height: 540px
+        top: 50px
+        border-radius: 6px
+        overflow: hidden
+        background: #FFFFFF
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15)
+        @media only screen and (min-width: 768px) and (max-width: 991px)
+            height: 405px
+        @media only screen and (max-width: 767px)
+            top: 45px
+            height: 210px
+            margin: 0 15px
+        @media only screen and (min-width: 480px) and (max-width: 767px)
+            height: 280px
+        .image-wrapper
+            cursor: pointer 
+            position: absolute 
+            left: 50% 
+            top: 50% 
+            transform: translate(-50%, -50%)
+        .play
+            border: 0px solid
+            background: none
+            position: absolute
+            outline: none
+            cursor: pointer
+            left: calc( 50% - 64px )
+            top: calc( 50% - 62px )
+            height: 124px
+            width: 128px
+            @media only screen and (max-width: 767px)
+                height: 74px;
+                width: 58px
+                left: calc(50% - 28px)
+                top: calc(50% - 60px)
+        .image-wrapper,
+        .image 
+            width: 100%
+        .preview,
+        iframe 
+            position: absolute 
+            top: 0 
+            left: 0 
+            width: 100% 
+            height: 100% 
+        [data-hidden="true"] 
+            display: none 
+
+
+// service area
+.services-area
+    padding-top: 374px
+    padding-bottom: 100px
+    @media only screen and (min-width: 768px) and (max-width: 991px)
+        padding-top: 274px
+    @media only screen and (max-width: 767px)
+        padding-bottom: 50px
+        padding-top: 185px
+    @media only screen and (max-width: 280px)
+        padding-top: 185px
+       
+    .container
+        display: grid
+        grid-template-columns: repeat( 3, 1fr )
+        @media only screen and (max-width: 767px)
+            grid-template-columns: 1fr
+        .single-service
+            text-align: center
+            box-sizing: border-box
+            padding: 32px
+            &:nth-child(-n+3)
+                padding-top: 0
+            &:nth-child(n+3)
+                padding-bottom: 0
+
+.single-service
+    text-align: center
+    box-sizing: border-box
+    padding: 32px
+    @media only screen and (max-width: 767px)
+        border: 0px solid
+    .service-icon
+        margin: 0 0 30px
+        @media only screen and (max-width: 767px)
+            margin: 0 0 15px
+    .service-title
+        font-family: 'Lato', sans-serif
+        font-weight: 500
+        font-size: 24px
+        line-height: 30px
+        color: #444444
+        margin: 0 0 18px
+        @media only screen and (max-width: 767px)
+            font-size: 18px
+            margin: 0 0 10px
+    .service-content
+        font-family: 'Lato', sans-serif
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+        color: #777777
+
+// testimonials section
+.testimonials-section
+    background: linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%)
+    .container
+        display: grid
+        grid-template-columns: repeat( 3, 1fr )
+        grid-column-gap: 50px
+        @media only screen and (max-width: 767px)
+            grid-template-columns: 1fr
+            grid-column-gap: 0
+    .single-testimonial
+        background: #FFFFFF
+        border: 1px solid #DDDDDD
+        box-sizing: border-box
+        border-radius: 6px
+        padding: 30px
+        @media only screen and (max-width: 767px)
+            padding: 15px
+            margin: 15px
+        
+            
+    .testimonial-buttons
+        text-align: center
+        margin-top: 100px
+        &> button
+            margin: 0 24px
+            &.button-secondary
+                border: 1px solid #C15E26
+            @media only screen and (max-width: 767px)
+                font-size: 14px
+                height: 45px
+                width: 200px
+                margin-bottom: 15px
+
+// pro section
+.promo-section
+    background: #444444
+    .container
+        display: grid
+        grid-template-columns: repeat( 2, 1fr)
+        @media only screen and (max-width: 767px)
+            grid-template-columns: 1fr
+    .promo-thumbnail
+        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.15))
+        overflow: hidden
+        padding: 0 40px 0 0
+        @media only screen and (max-width: 767px)
+            padding: 0
+            margin: 15px
+        img
+            border-radius: 6px
+            @media only screen and (max-width: 767px)
+                width: 100%
+
+    .promo-desc
+        color: #fff
+        padding: 0 15px
+        h2
+            font-family: 'Arvo', serif
+            font-weight: normal
+            font-size: 28px
+            line-height: 35px
+            @media only screen and (max-width: 767px)
+                font-size: 24px
+        p
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 28px
+            color: #CCCCCC
+            @media only screen and (max-width: 767px)
+                font-size: 14px
+
+// featured section
+.fetured-images-section
+    .container
+        display: grid
+        grid-column-gap: 50px
+        grid-template-columns: repeat( 2, 1fr )
+        @media only screen and (max-width: 767px)
+            grid-template-columns: 1fr
+        .featured-image
+            filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.15))
+            overflow: hidden
+            @media only screen and (max-width: 767px)
+                margin: 0 15px 15px
+            img
+                border-radius: 6px
+                @media only screen and (max-width: 767px)
+                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0))
+                    width: 100%
+
+
+//footer section
+.footer-title
+    padding: 5px
+    font-family: 'Lato', sans-serif
+    font-weight: 500
+    font-size: 24px
+    line-height: 36px
+    color: #444444
+    @media only screen and (max-width: 767px)
+        font-size: 18px
+
+.footer-subtitle
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 22px
+    color: #777777
+    @media only screen and (max-width: 767px)
+        font-size: 14px
+    a
+        color: #18a0fb
+
+.footer-section
+    text-align: center
+    .footer-top
+        .footer-title
+            margin-bottom: 46px
+    .footer-widgets
+        .container
+            display: grid
+            grid-template-columns: repeat( 3, 1fr )
+            @media only screen and (max-width: 767px)
+                grid-template-columns: 1fr
+            .single-service
+                padding-top: 0
+                padding-bottom: 0
+                @media only screen and (max-width: 767px)
+                    padding-top: 15px
+                    padding-bottom: 15px
